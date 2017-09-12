@@ -1,7 +1,6 @@
 package com.cn.build.builder.example.sendemail;
 
-import javax.mail.*;
-import javax.mail.internet.*;
+
 
 import java.util.Properties;
 
@@ -15,7 +14,7 @@ class SimpleMail
         props.setProperty("mail.user", "emailuser");
         props.setProperty("mail.password", "");
 
-        Session mailSession = Session.getDefaultInstance(props, null);
+     /*   Session mailSession = Session.getDefaultInstance(props, null);
         Transport transport = mailSession.getTransport();
 
         MimeMessage message = new MimeMessage(mailSession);
@@ -24,7 +23,7 @@ class SimpleMail
 
         transport.connect();
         transport.sendMessage(message, message.getRecipients(Message.RecipientType.TO));
-        transport.close();
+        transport.close();*/
         }
    }
 

@@ -1,13 +1,8 @@
 package com.cn.build.builder.example.messagebuilder;
 
-import sun.plugin2.message.Message;
-import sun.plugin2.message.transport.Transport;
 
 import java.util.*;
-import java.io.*;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.activation.*;
+
 
 abstract public class AutoMessage
 {
