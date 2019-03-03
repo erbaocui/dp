@@ -5,7 +5,7 @@ public class ConceretHandlerB extends Handler {
     public void handlerRequest(Integer request) {
         if(request>=11&&request<=20){
             System.out.println("Handler b 11-20");
-        }else{
+        }else if(handler!=null){
             handler.handlerRequest(request);
         }
     }

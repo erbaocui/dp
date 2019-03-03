@@ -1,10 +1,10 @@
 package com.cn.behavior.responsibility.template;
 
-public class ConceretHandlerA extends Handler {
+public class ConceretHandlerN extends Handler {
     @Override
     public void handlerRequest(Integer request) {
-        if(request>=0&&request<=10){
-            System.out.println("Handler A0-10");
+        if(request>=21&&request<=30){
+            System.out.println("Handler N 21-30");
         }else if(handler!=null){
             handler.handlerRequest(request);
         }
