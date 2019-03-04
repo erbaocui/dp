@@ -12,6 +12,6 @@ public class Client {
         handlerA.handlerRequest(15);
         handlerA.handlerRequest(23);
 
-        
+
     }
 }
