@@ -1,4 +1,4 @@
-package com.cn.struct.decorator.template.abstractTp;
+package com.cn.struct.decorator.template.a;
 
 public class ConcreteObserver implements Observer
 {
