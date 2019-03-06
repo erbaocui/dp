@@ -1,41 +1,29 @@
 package com.cn.struct.composite.template.transparent;
 
-import java.util.Enumeration;
-import java.util.Vector;
+
+import java.util.List;
 
 public class Leaf implements Component
 {
-    public void sampleOperation()
-    {
-        // Write your code here
+    public void doSomething() {
+        System.out.println("执行");
+
     }
 
-    public void add(Component component)
-    {
-        componentVector.addElement(component);
-    }
 
-    public void remove(Component component)
-    {
-        componentVector.removeElement(component);
-    }
+    public void add(Component component){
+        //1抛异常
+        //2什么都不做
 
-    public Composite getComposite()
-    {
-        // Write your code here
+    }
+    public void remove(Component component){
+
+    }
+    public List<Component> getALL(){
         return null;
+
     }
 
-    public Enumeration components()
-    {
-        // Write your code here
-        return null;
-    }
 
-    /**
-     * @associates <{Component}>
-     * @link aggregation 
-     * @supplierCardinality 0..*
-     */
-    private Vector componentVector = new Vector();
+
 }

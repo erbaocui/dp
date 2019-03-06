@@ -1,43 +1,26 @@
 package com.cn.struct.composite.template.transparent;
 
-import java.util.Vector;
-import java.util.Enumeration;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Composite implements Component
-{
-    public Composite getComposite()
-    {
-        return this;
-    }
+public class Composite implements Component{
 
-    public void sampleOperation()
-    {
-        Enumeration enumeration = components();
-        while (enumeration.hasMoreElements())
-        {
-            ((Component)enumeration.nextElement()).sampleOperation();
+    private List<Component> list =new ArrayList<Component>();
+    public void doSomething() {
+        for(Component component:list){
+            component.doSomething();
         }
+
     }
 
-    public void add(Component component)
-    {
-        componentVector.addElement(component);
+    public void add(Component component){
+        list.add(component);
+    }
+    public void remove(Component component){
+        list.remove( component);
+    }
+    public List<Component> getALL(){
+        return list;
     }
 
-    public void remove(Component component)
-    {
-        componentVector.removeElement(component);
-    }
-
-    public Enumeration components()
-    {
-        return componentVector.elements();
-    }
-
-    /**
-     * @associates <{Component}>
-     * @link aggregation 
-     * @supplierCardinality 0..*
-     */
-    private Vector componentVector = new Vector();
 }

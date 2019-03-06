@@ -1,15 +1,14 @@
 package com.cn.struct.composite.template.transparent;
 
-import java.util.Enumeration;
+import java.util.List;
+
 public interface Component
 {
-    void sampleOperation();
+    public void doSomething();
 
-    Composite getComposite();
+    public void add(Component component);
+    public void remove(Component component);
+    public List<Component> getALL();
 
-    void add(Component component);
 
-    void remove(Component component);
-
-    Enumeration components();
 }
