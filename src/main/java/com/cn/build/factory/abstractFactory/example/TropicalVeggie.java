@@ -1,10 +1,10 @@
-package com.cn.build.factory.abstractFactory.example.farm;
+package com.cn.build.factory.abstractFactory.example;
 
-public class NorthernVeggie implements Veggie
+public class TropicalVeggie implements Veggie
 {
     private String name;
 
-    public NorthernVeggie(String name)
+    public TropicalVeggie(String name)
     {
     }
 

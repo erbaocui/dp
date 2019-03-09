@@ -1,4 +1,4 @@
-package com.cn.build.factory.abstractFactory.example.farm;
+package com.cn.build.factory.abstractFactory.example;
 
 public class TropicalGardener implements Gardener
 {
