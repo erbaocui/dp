@@ -2,27 +2,30 @@ package com.cn.build.builder.template.multi;
 
 public class Director
 {
-    /**
-     * @link aggregation
-     * @directed
-     * @clientRole builder*/
+
     private Builder builder;
 
-    public Director(Builder builder)
+    public Director()
     {
+    }
+
+    public Builder getBuilder() {
+        return builder;
+    }
+
+    public void setBuilder(Builder builder) {
         this.builder = builder;
     }
 
     public void construct()
     {
-		builder = new ConcreteBuilder1();
+
 
         builder.buildPart1();
 
         builder.buildPart2();
 
-        builder.retrieveResult();
 
-        //continue with other code
+
     }
 }

@@ -2,6 +2,16 @@ package com.cn.build.prototype.template.simple;
 
 public class ConcretePrototype implements Prototype
 {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Object clone()
     {
         try
@@ -13,5 +23,9 @@ public class ConcretePrototype implements Prototype
             //write your code here
             return null;
         }
+    }
+
+    public ConcretePrototype(String name) {
+        this.name = name;
     }
 }

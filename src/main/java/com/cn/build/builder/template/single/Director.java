@@ -2,10 +2,8 @@ package com.cn.build.builder.template.single;
 
 public class Director
 {
-    /**
-     * @link aggregation
-     * @directed
-     * @clientRole builder*/
+
+
     private Builder builder;
 
     public Director(Builder builder)

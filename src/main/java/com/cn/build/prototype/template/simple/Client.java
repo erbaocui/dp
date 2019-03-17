@@ -7,12 +7,11 @@ public class Client
         Prototype p = (Prototype) example.clone();
     }
 
-    /**
-     * @directed
-     * @clientRole prototype 
-     * @link aggregation
-     * @clientCardinality 1
-     * @supplierCardinality 1..*
-     */
+
     private Prototype prototype;
+
+    public static void main(String[] args) {
+        Prototype a=new ConcretePrototype("a");
+        Prototype b=(Prototype)a.clone();
+    }
 }

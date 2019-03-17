@@ -2,19 +2,17 @@ package com.cn.build.builder.template.multi;
 
 public class ConcreteBuilder2 extends Builder
 {
-    /**
-     * @label Creates
-     */
-    private Product2 product = new Product2() ;
+
+    private Product product = new Product2() ;
 
     public void buildPart1()
     {
-        //build the first part of the product
+        product.add("builder2 Product2 part1");
     }
 
     public void buildPart2()
     {
-        //build the second part of the product
+        product.add("builder2 Product2 part2");
     }
 
     public Product retrieveResult()

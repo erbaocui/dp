@@ -5,19 +5,16 @@ import com.cn.build.builder.template.single.Product;
 
 public class ConcreteBuilder extends Builder
 {
-    /**
-     * @label Creates
-     */
     private Product product = new Product() ;
 
     public void buildPart1()
     {
-        //build the first part of the product
+        product.add("aaaa");
     }
 
     public void buildPart2()
     {
-        //build the second part of the product
+        product.add("bbbbbb");
     }
 
     public Product retrieveResult()

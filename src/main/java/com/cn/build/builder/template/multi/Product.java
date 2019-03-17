@@ -3,4 +3,7 @@
 package com.cn.build.builder.template.multi;
 
 public interface Product {
+
+    public void add(String str);
+    public void show();
 }
